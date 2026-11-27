@@ -186,9 +186,9 @@ export const recognition = [
 ];
 
 export const education = [
-  { school: "Stanford University", program: "Advanced Software Systems Graduate Program", dates: "In progress" },
-  { school: "Stony Brook University", program: "M.S. in Computer Science", dates: "2016 – 2017" },
-  { school: "National Institute of Technology Calicut", program: "B.Tech. in Computer Science and Engineering", dates: "2010 – 2014" },
+  { school: "Stanford University", program: "Software Systems Graduate Certificate", dates: "In progress", href: "https://online.stanford.edu/programs/software-systems-graduate-certificate" },
+  { school: "Stony Brook University", program: "M.S. in Computer Science", dates: "2016 – 2017", href: "https://www.cs.stonybrook.edu/academics/graduate/ms-programs/ms-cs-program.html" },
+  { school: "National Institute of Technology Calicut", program: "B.Tech. in Computer Science and Engineering", dates: "2010 – 2014", href: "https://nitc.ac.in/department/computer-science-amp-engineering" },
 ];
 
 export const patents = [

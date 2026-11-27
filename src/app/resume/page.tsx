@@ -31,7 +31,7 @@ export default function Resume() {
             <h2>Education</h2>
             {education.map((item) => (
               <article key={item.school} className="list-item">
-                <span className="date">{item.dates}</span><h3>{item.school}</h3><p>{item.program}</p>
+                <span className="date">{item.dates}</span><h3>{item.school}</h3><p><a className="text-link" href={item.href}>{item.program}</a></p>
               </article>
             ))}
           </section>

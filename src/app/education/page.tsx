@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Education", alternates: { canonical:
 export default function Education() {
   return (
     <SectionPage title="Education" intro="Academic foundations and continuing studies in computer science and advanced systems.">
-      {education.map((item) => <article className="list-item" key={item.school}><span className="date">{item.dates}</span><h3>{item.school}</h3><p>{item.program}</p></article>)}
+      {education.map((item) => <article className="list-item" key={item.school}><span className="date">{item.dates}</span><h3>{item.school}</h3><p><a className="text-link" href={item.href}>{item.program}</a></p></article>)}
     </SectionPage>
   );
 }
