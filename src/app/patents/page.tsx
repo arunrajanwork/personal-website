@@ -7,7 +7,12 @@ export const metadata: Metadata = { title: "Patents", alternates: { canonical: "
 export default function Patents() {
   return (
     <SectionPage title="Patents" intro="Granted United States patents naming me as an inventor, from my time at VMware.">
-      {patents.map((item) => <article className="list-item" key={item.number}><h3>U.S. Patent {item.number}</h3><a href={item.href}>Read patent record</a></article>)}
+      {patents.map((item) => (
+        <article className="list-item" key={item.number}>
+          <h3>{item.title}</h3>
+          <a href={item.href}>U.S. Patent {item.number}</a>
+        </article>
+      ))}
     </SectionPage>
   );
 }

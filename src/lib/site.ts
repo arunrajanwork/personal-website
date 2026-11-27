@@ -192,6 +192,6 @@ export const education = [
 ];
 
 export const patents = [
-  { number: "11,573,869", href: "https://patents.google.com/patent/US11573869B2/en" },
-  { number: "11,436,531", href: "https://patents.google.com/patent/US11436531B2/en" },
+  { number: "11,573,869", title: "Managing lifecycle of virtualization software running in a standalone host", href: "https://patents.google.com/patent/US11573869B2/en" },
+  { number: "11,436,531", title: "Machine learning-powered resolution resource service for HCI systems", href: "https://patents.google.com/patent/US11436531B2/en" },
 ];
