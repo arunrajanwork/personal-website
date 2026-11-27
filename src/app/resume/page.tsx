@@ -1,19 +1,62 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "../../components/SectionPage";
-import { education, experience, linkedin } from "../../lib/site";
+import CareerRole from "../../components/CareerRole";
+import { education, experience, linkedin, patents, recognition, technicalSkills } from "../../lib/site";
 
-export const metadata: Metadata = { title: "Resume", alternates: { canonical: "/resume" } };
+export const metadata: Metadata = {
+  title: "Resume",
+  description: "Arun Rajan’s professional resume: distributed systems, cloud infrastructure, data engineering, AI infrastructure, technical expertise, education, and patents.",
+  alternates: { canonical: "/resume" },
+};
 
 export default function Resume() {
   return (
-    <SectionPage title="Arun Rajan" intro="Distributed systems and data-platform engineer. Principal Member of Technical Staff at Oracle Cloud Infrastructure.">
-      <p className="prose"><a href={linkedin}>LinkedIn profile</a></p>
-      <h2>Professional experience</h2>
-      {experience.map((item) => <article key={item.company + item.role} className="list-item"><span className="date">{item.dates}</span><h3>{item.company}</h3><strong>{item.role}</strong><p>{item.description}</p></article>)}
-      <h2>Education</h2>
-      {education.map((item) => <article key={item.school} className="list-item"><span className="date">{item.dates}</span><h3>{item.school}</h3><p>{item.program}</p></article>)}
-      <p><Link href="/patents">Patents and research</Link></p>
+    <SectionPage title="Arun Rajan" intro="Principal Member of Technical Staff at Oracle Cloud Infrastructure | Distributed systems and data-platform engineering">
+      <div className="resume-contact">
+        <a className="text-link" href={linkedin}>LinkedIn profile</a>
+        <Link className="text-link" href="/experience">Detailed engineering experience</Link>
+      </div>
+      <div className="career-layout resume-layout">
+        <div className="career-main">
+          <section className="resume-section">
+            <h2>Professional profile</h2>
+            <p className="career-description">Staff-level software engineer with more than a decade of experience in distributed cloud infrastructure, governed data sharing, RAG and vector-store systems, storage abstractions, and infrastructure lifecycle management. Experienced in API design, cross-team execution, production stewardship, and system modernization.</p>
+          </section>
+          <section className="resume-section">
+            <h2>Professional experience</h2>
+            {experience.map((item) => <CareerRole key={item.company + item.role} item={item} />)}
+          </section>
+          <section className="resume-section">
+            <h2>Education</h2>
+            {education.map((item) => (
+              <article key={item.school} className="list-item">
+                <span className="date">{item.dates}</span><h3>{item.school}</h3><p>{item.program}</p>
+              </article>
+            ))}
+          </section>
+        </div>
+        <aside className="career-aside">
+          <section className="career-sidebar">
+            <h2>Technical expertise</h2>
+            {technicalSkills.map((group) => (
+              <div className="skill-group" key={group.category}>
+                <h3>{group.category}</h3>
+                <p>{group.skills.join(" · ")}</p>
+              </div>
+            ))}
+          </section>
+          <section className="career-sidebar">
+            <h2>Patents</h2>
+            <ul className="career-bullets">{patents.map((patent) => <li key={patent.number}><a href={patent.href}>U.S. Patent {patent.number}</a></li>)}</ul>
+            <Link className="text-link" href="/patents">View patents</Link>
+          </section>
+          <section className="career-sidebar">
+            <h2>Recognition</h2>
+            <ul className="career-bullets">{recognition.map((item) => <li key={item}>{item}</li>)}</ul>
+          </section>
+        </aside>
+      </div>
     </SectionPage>
   );
 }
