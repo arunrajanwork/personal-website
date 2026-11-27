@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Resume() {
   return (
-    <SectionPage title="Arun Rajan" intro="Principal Member of Technical Staff at Oracle Cloud Infrastructure | Distributed systems and data-platform engineering">
+    <SectionPage title="Arun Rajan" intro="Principal Member of Technical Staff · Oracle AI Data Platform">
       <div className="resume-contact">
         <a className="text-link" href={linkedin}>LinkedIn profile</a>
         <Link className="text-link" href="/experience">Detailed engineering experience</Link>

@@ -36,17 +36,19 @@ export type CareerRole = {
   dates: string;
   location: string;
   description: string;
+  productUrl?: string;
   projects: { title: string; accomplishments: string[] }[];
   resumeHighlights: string[];
 };
 
 export const experience: CareerRole[] = [
   {
-    company: "Oracle Cloud Infrastructure",
+    company: "Oracle — AI Data Platform",
+    productUrl: "https://www.oracle.com/ai-data-platform/",
     role: "Principal Member of Technical Staff",
     dates: "Sep 2024 – Present",
     location: "Santa Clara, CA",
-    description: "I lead the design and evolution of distributed capabilities for Oracle’s AI and data platforms, with responsibility for architecture, delivery, and production reliability.",
+    description: "I lead the design and evolution of distributed capabilities within Oracle AI Data Platform, a unified enterprise platform for governed data, analytics, and AI applications. My work focuses on architecture, delivery, and production reliability across the data and AI infrastructure.",
     projects: [
       {
         title: "Knowledge Base and RAG infrastructure",
@@ -82,7 +84,7 @@ export const experience: CareerRole[] = [
     ],
   },
   {
-    company: "Oracle Cloud Infrastructure",
+    company: "Oracle",
     role: "Senior Member of Technical Staff",
     dates: "Feb 2022 – Sep 2024",
     location: "Santa Clara, CA",
@@ -179,7 +181,6 @@ export const technicalSkills = [
 ];
 
 export const recognition = [
-  "Principal Member of Technical Staff, Oracle Cloud Infrastructure.",
   "Recipient of VMware’s Customer Advocate Award.",
   "Named inventor on two granted U.S. patents.",
 ];

@@ -33,7 +33,7 @@ export default function Home() {
         <aside className="profile-card">
           <div className="profile-mark" aria-hidden="true">ar.</div>
           <h2>Arun Rajan</h2>
-          <p>Principal Member of Technical Staff at Oracle Cloud Infrastructure.</p>
+          <p>Principal Member of Technical Staff at Oracle, working on the AI Data Platform.</p>
           <p className="muted">Previously at VMware. Interested in how reliable, large-scale systems are designed and operated.</p>
           <div className="profile-links">
             <a href={linkedin}>LinkedIn</a>

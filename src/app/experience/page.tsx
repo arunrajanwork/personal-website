@@ -6,7 +6,7 @@ import { experience, recognition } from "../../lib/site";
 
 export const metadata: Metadata = {
   title: "Experience",
-  description: "Arun Rajan’s engineering experience at Oracle Cloud Infrastructure and VMware, including distributed data platforms, AI infrastructure, and lifecycle management.",
+  description: "Arun Rajan’s engineering experience at Oracle AI Data Platform and VMware, including distributed data platforms, AI infrastructure, and lifecycle management.",
   alternates: { canonical: "/experience" },
 };
 

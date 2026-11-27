@@ -16,6 +16,7 @@ export default function CareerRole({ item, detailed = false }: { item: Role; det
       {detailed ? (
         <>
           <p className="career-description">{item.description}</p>
+          {item.productUrl && <p><a className="text-link" href={item.productUrl}>Official platform overview</a></p>}
           <div className="career-projects">
             {item.projects.map((project) => (
               <section className="career-project" key={project.title}>
