@@ -63,9 +63,9 @@ export default function Home() {
         <div>
           <p className="eyebrow">Writing</p>
           <h2>Notes from the workbench</h2>
-          <p className="section-intro">Technical articles will follow each experiment, from the initial problem and design decisions to measured results and lessons learned.</p>
+          <p className="section-intro">Explore architectural decisions, failure modes, and trade-offs in real distributed systems.</p>
         </div>
-        <Link className="text-link" href="/blog">Visit the journal</Link>
+        <Link className="text-link" href="/blog/why-cloud-systems-separate-control-plane-and-data-plane">Read the latest article</Link>
       </section>
     </>
   );
