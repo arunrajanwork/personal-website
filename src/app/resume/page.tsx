@@ -21,7 +21,7 @@ export default function Resume() {
         <div className="career-main">
           <section className="resume-section">
             <h2>Professional profile</h2>
-            <p className="career-description">Staff-level software engineer with more than a decade of experience in distributed cloud infrastructure, governed data sharing, RAG and vector-store systems, storage abstractions, and infrastructure lifecycle management. Experienced in API design, cross-team execution, production stewardship, and system modernization.</p>
+            <p className="career-description">Principal engineer with a background in distributed systems, enterprise storage, cloud data platforms, and AI infrastructure. My experience includes architectural design, technical ownership, cross-team engineering leadership, and the operational evolution of production systems.</p>
           </section>
           <section className="resume-section">
             <h2>Professional experience</h2>

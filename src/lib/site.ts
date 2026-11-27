@@ -46,39 +46,39 @@ export const experience: CareerRole[] = [
     role: "Principal Member of Technical Staff",
     dates: "Sep 2024 – Present",
     location: "Santa Clara, CA",
-    description: "Technical leadership and end-to-end ownership of distributed data-platform capabilities, from initial design and proof of concept through production delivery and ongoing reliability.",
+    description: "I lead the design and evolution of distributed capabilities for Oracle’s AI and data platforms, with responsibility for architecture, delivery, and production reliability.",
     projects: [
       {
         title: "Knowledge Base and RAG infrastructure",
         accomplishments: [
-          "Co-led the Knowledge Base capability from proof of concept and became its primary technical and operational owner.",
-          "Designed the API surface and foundational integrations for Spark-based document ingestion, access control, and vector-store provisioning.",
-          "Guided a small engineering team and led development of the RAG integration layer connecting Knowledge Base APIs to agentic AI workflows.",
-          "Improved ingestion reliability through work on correctness, retry behavior, processing time, and failure handling.",
+          "Co-led the Knowledge Base capability from initial exploration through general availability, assuming technical and operational ownership as it matured.",
+          "Defined the architecture and service contracts for document ingestion, authorization, and vector-store integration across the data platform.",
+          "Led engineering execution across the knowledge-base and retrieval integration layers, enabling their use in agentic AI workflows.",
+          "Strengthened ingestion reliability by addressing correctness, recovery semantics, processing efficiency, and operational failure modes.",
         ],
       },
       {
         title: "Delta Sharing provider and consumer platform",
         accomplishments: [
-          "Led end-to-end development of governed data sharing using the open Delta Sharing protocol.",
-          "Designed a 19-API provider surface for shares, recipients, schemas, table membership, role-based access control, and Delta Lake validation.",
-          "Implemented consumer APIs for shared-data discovery, metadata retrieval, and protocol-compliant Parquet responses.",
-          "Supported scale validation of shared tables up to approximately 20 GB and led migration from Delta Standalone to Delta Kernel.",
+          "Led the architecture and delivery of governed data exchange using the open Delta Sharing protocol, spanning the provider and consumer experiences.",
+          "Designed the provider service contracts and authorization model for managing shares, recipients, and data assets, with validation of supported table formats.",
+          "Implemented consumer-side discovery, metadata retrieval, and protocol-compliant access to shared data.",
+          "Led the transition to Delta Kernel and supported scale validation, evolving the platform toward a maintainable foundation for open-protocol interoperability.",
         ],
       },
       {
         title: "Cloud filesystem reliability and storage modernization",
         accomplishments: [
-          "Led the design and foundational implementation of a Python fsspec-based storage abstraction for Spark workloads.",
-          "Implemented storage operations and Python client integration, including packaging for distributed Spark clusters.",
-          "Coordinated engineers on a fusepy-based filesystem layer built on the reusable storage abstraction, improving reliability and enabling modernization of the legacy native implementation.",
+          "Designed a reusable storage abstraction for distributed Spark workloads, establishing a Python-based foundation with fsspec.",
+          "Implemented core filesystem operations, service-client integration, and distributable components for Spark clusters.",
+          "Guided the modernization of the filesystem integration around the reusable storage layer, enabling the retirement of a legacy native implementation and improving workload reliability.",
         ],
       },
     ],
     resumeHighlights: [
-      "Owned Knowledge Base and RAG infrastructure from proof of concept through delivery, designing APIs and Spark-based ingestion and guiding engineering execution.",
-      "Led the Delta Sharing provider and consumer platform, designing 19 provider APIs, implementing core consumer endpoints, and migrating to Delta Kernel.",
-      "Led a filesystem modernization initiative using fsspec and fusepy to improve reliability for distributed Spark workloads.",
+      "Led the architecture and technical ownership of Knowledge Base and RAG infrastructure, spanning distributed ingestion, access control, retrieval integration, and production reliability.",
+      "Led the development of a governed data-sharing platform across provider and consumer services, with responsibility for protocol interoperability, authorization, and long-term architectural evolution.",
+      "Architected a reusable filesystem abstraction and guided modernization of the storage integration to improve reliability for distributed Spark workloads.",
     ],
   },
   {
@@ -86,21 +86,21 @@ export const experience: CareerRole[] = [
     role: "Senior Member of Technical Staff",
     dates: "Feb 2022 – Sep 2024",
     location: "Santa Clara, CA",
-    description: "Designed and delivered control-plane capabilities and asynchronous provisioning workflows for cloud data infrastructure.",
+    description: "Developed foundational control-plane services and asynchronous workflows for provisioning and governing enterprise cloud data infrastructure.",
     projects: [
       {
         title: "Data platform control plane",
         accomplishments: [
           "Designed and implemented provisioning APIs, role-based access control, and data-engine attachment workflows for OCI Lake, Oracle Autonomous Data Warehouse, and SQL endpoints.",
           "Automated capacity checks, IAM-policy recommendations, and pre-provisioning validation to improve operational workflows.",
-          "Improved storage-resource tag replication performance by approximately 20x.",
+          "Optimized storage-resource metadata replication, substantially reducing processing time.",
           "Established canary and scheduled integration-test workflows to strengthen release confidence and detect regressions.",
         ],
       },
     ],
     resumeHighlights: [
       "Designed control-plane APIs and asynchronous provisioning, RBAC, and data-engine attachment workflows.",
-      "Automated infrastructure and IAM validation and improved storage-resource tag replication performance by approximately 20x.",
+      "Automated infrastructure and IAM validation and improved the performance of storage-resource metadata replication.",
       "Established canary and scheduled integration tests to support release reliability.",
     ],
   },
@@ -114,16 +114,16 @@ export const experience: CareerRole[] = [
       {
         title: "vSAN Witness Appliance lifecycle management",
         accomplishments: [
-          "Co-led design and delivery of lifecycle-management capabilities for vSAN Witness Appliances in VMware Cloud on AWS stretched clusters and on-premises deployments.",
-          "Integrated witness lifecycle operations with vSphere Lifecycle Manager workflows.",
+          "Co-led the architecture and delivery of vSAN Witness Appliance lifecycle management across stretched-cluster and on-premises deployments.",
+          "Integrated witness health, scanning, and remediation with vSphere Lifecycle Manager to extend lifecycle automation to distributed storage deployments.",
         ],
       },
       {
         title: "Parallel cluster remediation and firmware lifecycle",
         accomplishments: [
-          "Increased parallel cluster-upgrade capacity from 15 to 64 in vSphere Lifecycle Manager.",
-          "Delivered declarative firmware-update capabilities for ESXi hosts.",
-          "Reduced Dell EMC VxRail upgrade time by 30%.",
+          "Expanded parallel cluster remediation in vSphere Lifecycle Manager to improve upgrade scalability and operational efficiency.",
+          "Delivered declarative firmware lifecycle management for ESXi hosts, enabling consistent infrastructure updates across hardware integrations.",
+          "Reduced upgrade duration for Dell EMC VxRail deployments by 30%, improving the efficiency of infrastructure maintenance.",
         ],
       },
       {
@@ -136,7 +136,7 @@ export const experience: CareerRole[] = [
     ],
     resumeHighlights: [
       "Co-led vSAN Witness Appliance lifecycle-management capabilities for VMware Cloud on AWS and on-premises deployments.",
-      "Increased parallel cluster-upgrade capacity from 15 to 64, delivered declarative firmware updates, and reduced VxRail upgrade time by 30%.",
+      "Expanded parallel remediation and declarative firmware lifecycle capabilities, reducing VxRail upgrade duration by 30%.",
       "Built an ML-assisted resolution-resource service with fastText embeddings.",
       "Named inventor on two granted U.S. patents and received the Customer Advocate Award.",
     ],
@@ -171,13 +171,6 @@ export const experience: CareerRole[] = [
   },
 ];
 
-export const careerMetrics = [
-  { value: "12+ years", label: "Software engineering experience" },
-  { value: "19 APIs", label: "Delta Sharing provider API design" },
-  { value: "15 to 64", label: "Parallel vSphere cluster upgrades" },
-  { value: "30%", label: "Reduction in VxRail upgrade time" },
-];
-
 export const technicalSkills = [
   { category: "Distributed systems and data platforms", skills: ["Apache Spark", "Apache Iceberg", "Delta Lake", "Delta Sharing", "Delta Kernel", "Kubernetes", "Asynchronous control planes", "REST APIs"] },
   { category: "AI infrastructure", skills: ["RAG", "Vector stores", "Embeddings", "Knowledge bases", "Oracle Autonomous Database"] },
@@ -186,8 +179,7 @@ export const technicalSkills = [
 ];
 
 export const recognition = [
-  "Promoted to Principal Member of Technical Staff at Oracle in September 2024.",
-  "Promoted twice during four years at VMware.",
+  "Principal Member of Technical Staff, Oracle Cloud Infrastructure.",
   "Recipient of VMware’s Customer Advocate Award.",
   "Named inventor on two granted U.S. patents.",
 ];

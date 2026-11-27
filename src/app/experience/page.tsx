@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "../../components/SectionPage";
 import CareerRole from "../../components/CareerRole";
-import { careerMetrics, experience, recognition } from "../../lib/site";
+import { experience, recognition } from "../../lib/site";
 
 export const metadata: Metadata = {
   title: "Experience",
@@ -12,15 +12,7 @@ export const metadata: Metadata = {
 
 export default function Experience() {
   return (
-    <SectionPage title="Experience" intro="My professional journey spans distributed cloud infrastructure, enterprise data platforms, storage systems, and AI infrastructure. I have taken systems from proof of concept and design to production delivery and ongoing operation.">
-      <div className="career-metrics" aria-label="Selected engineering outcomes">
-        {careerMetrics.map((metric) => (
-          <div className="career-metric" key={metric.label}>
-            <strong>{metric.value}</strong>
-            <span>{metric.label}</span>
-          </div>
-        ))}
-      </div>
+    <SectionPage title="Experience" intro="My work centers on the architecture and evolution of distributed systems, from enterprise storage and infrastructure management to cloud data platforms and AI infrastructure. I am particularly interested in the decisions that make complex systems reliable, maintainable, and useful at scale.">
       <div className="career-layout">
         <div className="career-main">
           <h2>Professional history</h2>
